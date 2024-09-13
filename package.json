@@ -3,16 +3,19 @@
   "scripts": {
     "client": "yarn --cwd FE dev",
     "server": "nodemon --cwd BE src/app.ts",
-    "build": "yarn --cwd BE build && yarn --cwd FE start"
+    "build": "yarn --cwd BE build && yarn --cwd FE start",
+    "dev": "concurrently \"yarn client\" \"yarn server\""
   },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/dotenv": "^8.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "react-hot-toast": "^2.4.1"
+    "concurrently": "^9.0.1"
   }
 }
