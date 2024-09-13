@@ -2,6 +2,7 @@
   "name": "auth-sys-ts",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Sahil Rathor",
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/app.ts",

@@ -1,5 +1,6 @@
 {
   "name": "auth-sys-ts",
+  "author": "Sahil Rathor",
   "scripts": {
     "client": "yarn --cwd FE dev",
     "server": "nodemon --cwd BE src/app.ts",
